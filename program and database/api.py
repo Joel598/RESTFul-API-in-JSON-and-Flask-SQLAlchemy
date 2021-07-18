@@ -11,7 +11,7 @@ app = Flask(__name__)
 #database configuration
 #database: mydb.db
 app.config['PASSWORD'] = 'xyz'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////mnt/c/Users/dsouz/Downloads/Compressed/api/mydb.db'  
+app.config['SQLALCHEMY_DATABASE_URI'] = ''  # (sqlite:////mnt/c/Users/mydb.db) URI location
 
 #database communication between Python program and databases
 db = SQLAlchemy(app)
